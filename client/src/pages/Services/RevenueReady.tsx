@@ -68,8 +68,11 @@ export default function RevenueReady() {
               </FadeIn>
               
               <FadeIn delay={400} className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Link href="/contact" className="btn-glow px-8 py-4 rounded-xl font-bold text-lg inline-flex items-center justify-center gap-2 group">
+                <Link href="/contact?focus=capture" className="btn-glow px-8 py-4 rounded-xl font-bold text-lg inline-flex items-center justify-center gap-2 group">
                   Stop Leaking Leads <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </Link>
+                <Link href="/contact?focus=booking" className="px-8 py-4 rounded-xl font-bold text-lg border border-white/10 hover:bg-white/5 transition-all text-white flex items-center justify-center">
+                  Book a Call
                 </Link>
               </FadeIn>
             </div>
@@ -487,7 +490,7 @@ export default function RevenueReady() {
                     </li>
                   ))}
                 </ul>
-                <Link href="/contact" className="w-full py-4 rounded-xl border border-white/10 hover:bg-white/5 font-bold text-center transition-all">
+                <Link href="/contact?focus=capture" className="w-full py-4 rounded-xl border border-white/10 hover:bg-white/5 font-bold text-center transition-all">
                   Start Capturing Traffic
                 </Link>
               </div>
@@ -514,7 +517,7 @@ export default function RevenueReady() {
                     </li>
                   ))}
                 </ul>
-                <Link href="/contact" className="btn-glow w-full py-4 rounded-xl font-bold text-center transition-all shadow-[0_0_20px_rgba(232,121,249,0.4)]">
+                <Link href="/contact?focus=capture" className="btn-glow w-full py-4 rounded-xl font-bold text-center transition-all shadow-[0_0_20px_rgba(232,121,249,0.4)]">
                   Start Intercepting Buyers
                 </Link>
               </div>
@@ -552,11 +555,14 @@ export default function RevenueReady() {
           </FadeIn>
 
           <FadeIn delay={300} className="flex flex-col items-center">
-            <Link href="/contact" className="btn-glow px-12 py-6 rounded-2xl font-bold text-xl flex items-center gap-3 group shadow-[0_0_30px_rgba(232,121,249,0.3)] hover:shadow-[0_0_50px_rgba(232,121,249,0.5)] transition-all">
+            <Link href="/contact?focus=capture" className="btn-glow px-12 py-6 rounded-2xl font-bold text-xl flex items-center gap-3 group shadow-[0_0_30px_rgba(232,121,249,0.3)] hover:shadow-[0_0_50px_rgba(232,121,249,0.5)] transition-all">
               Reveal My Hidden Buyers
               <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
             </Link>
-            <p className="mt-6 text-sm font-mono text-white/40 uppercase tracking-widest flex items-center gap-2">
+            <Link href="/contact?focus=booking" className="mt-6 text-sm text-[oklch(0.60_0.02_260)] hover:text-white transition-colors underline decoration-white/20 hover:decoration-white">
+              Already know you want this? Skip the audit and book a setup call.
+            </Link>
+            <p className="mt-4 text-xs font-mono text-white/40 uppercase tracking-widest flex items-center gap-2">
               <CheckCircle2 className="w-4 h-4 text-emerald-400" /> Free 15-Minute Audit • Setup in 48 Hours
             </p>
           </FadeIn>

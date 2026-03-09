@@ -48,8 +48,11 @@ export default function ResultReach() {
           </FadeIn>
           <FadeIn delay={300}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact" className="btn-glow px-8 py-4 rounded-xl font-bold text-lg inline-flex items-center justify-center gap-2 group">
+              <Link href="/contact?focus=visibility" className="btn-glow px-8 py-4 rounded-xl font-bold text-lg inline-flex items-center justify-center gap-2 group">
                 Get Your Visibility Audit <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Link>
+              <Link href="/contact?focus=booking" className="px-8 py-4 rounded-xl font-bold text-lg border border-white/10 hover:bg-white/5 transition-all text-white flex items-center justify-center">
+                Book a Call
               </Link>
             </div>
           </FadeIn>
@@ -214,9 +217,12 @@ export default function ResultReach() {
             <p className="text-xl text-[oklch(0.60_0.02_260)] mb-12 leading-relaxed">
               Stop letting modern search engines bypass your brand. Claim your authority as the "Obvious Choice" today.
             </p>
-            <div className="flex flex-col items-center">
-              <Link href="/contact" className="btn-glow px-12 py-6 rounded-xl font-bold text-lg inline-flex items-center gap-3 group shadow-[0_0_30px_rgba(232,121,249,0.3)] hover:shadow-[0_0_50px_rgba(232,121,249,0.5)] transition-all">
+            <div className="flex flex-col items-center gap-5">
+              <Link href="/contact?focus=visibility" className="btn-glow px-12 py-6 rounded-xl font-bold text-lg inline-flex items-center gap-3 group shadow-[0_0_30px_rgba(232,121,249,0.3)] hover:shadow-[0_0_50px_rgba(232,121,249,0.5)] transition-all">
                 Get Your Visibility Audit <Search className="w-5 h-5 group-hover:scale-110 transition-transform" />
+              </Link>
+              <Link href="/contact?focus=booking" className="text-sm text-[oklch(0.60_0.02_260)] hover:text-white transition-colors underline decoration-white/20 hover:decoration-white">
+                Skip the audit and book a strategy session directly.
               </Link>
             </div>
           </FadeIn>

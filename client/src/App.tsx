@@ -20,6 +20,8 @@ import Blog from "./pages/Blog"; // KEEPING: Don't lose your blog
 import BlogPost from "./pages/BlogPost";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import Privacy from "./components/Privacy";
+import Terms from "./components/Terms";
 
 function Router() {
   return (
@@ -38,6 +40,10 @@ function Router() {
       <Route path="/blog" component={Blog} />
       <Route path="/blog/:slug" component={BlogPost} />
       <Route path="/contact" component={Contact} />
+
+      {/* A2P Compliance Route Components */}
+      <Route path="/privacy" component={Privacy} />
+      <Route path="/terms" component={Terms} />
       
       {/* 404 Handling */}
       <Route path="/404" component={NotFound} />

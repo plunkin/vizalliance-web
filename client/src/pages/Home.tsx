@@ -143,12 +143,12 @@ export default function Home() {
               </FadeIn>
               
               <FadeIn delay={400} className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Link href="/contact" className="btn-glow px-8 py-4 rounded-xl font-bold text-lg inline-flex items-center justify-center gap-2">
-                  See How It Works <ArrowRight className="w-5 h-5" />
+                <Link href="/contact?focus=booking" className="btn-glow px-8 py-4 rounded-xl font-bold text-lg inline-flex items-center justify-center gap-2">
+                  Book a Call <ArrowRight className="w-5 h-5" />
                 </Link>
-                <button className="px-8 py-4 rounded-xl font-bold text-lg border border-white/10 hover:bg-white/5 transition-all">
-                  View Success Stories
-                </button>
+                <Link href="/contact?focus=visibility" className="px-8 py-4 rounded-xl font-bold text-lg border border-white/10 hover:bg-white/5 transition-all flex items-center justify-center text-white">
+                  Get Engine Audit
+                </Link>
               </FadeIn>
             </div>
 
@@ -309,11 +309,14 @@ export default function Home() {
           </FadeIn>
 
           <FadeIn delay={200} className="flex flex-col items-center">
-            <Link href="/contact" className="btn-glow px-12 py-6 rounded-2xl font-bold text-xl flex items-center gap-3 group">
+            <Link href="/contact?focus=visibility" className="btn-glow px-12 py-6 rounded-2xl font-bold text-xl flex items-center gap-3 group">
               Claim My Free Engine Audit
               <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
             </Link>
-            <p className="mt-6 text-sm font-mono text-white/30 uppercase tracking-widest">
+            <Link href="/contact?focus=booking" className="mt-6 text-sm text-[oklch(0.60_0.02_260)] hover:text-white transition-colors underline decoration-white/20 hover:decoration-white">
+              Already know what you need? Skip the audit and book a call directly.
+            </Link>
+            <p className="mt-4 text-xs font-mono text-white/30 uppercase tracking-widest">
               Customized for your niche • 15-minute walkthrough
             </p>
           </FadeIn>
